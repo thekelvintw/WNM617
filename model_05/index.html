@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Mobile</title>
+	
+	<link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css">
+	<!-- only use structure cuz theme is too poor and hard to overwrite it -->
+	<link rel="stylesheet" href="css/jq_mobile.css">
+
+	<script src="lib/js/jquery-2.2.4.min.js"></script>
+	<script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- want's everything in one document -->
+
+	<script src="js/jq_mobile.js"></script>
+
+</head>
+
+<body>
+
+		<section data-role="page" id="login">
+		<header data-role="header">
+			Login Page
+		</header>
+		<div data-role="main">
+			<form id="form-login" data-ajax="false">
+				<div class="form-control">
+					<label class="form-label" for="login-username">Username</label>
+					<input class="form-input" type="text" id="login-username" placeholder="Type Username">
+				</div>
+				<div class="form-control">
+					<label class="form-label" for="login-password">Password</label>
+					<input class="form-input" type="password" id="login-password" placeholder="Type Password">
+				</div>
+				<div class="form-control">
+					<label class="form-label"></label>
+					<input class="form-button" type="submit" value="Login">
+				</div>
+			
+			</form>
+			<div>
+				<a href="#main-map">Go to Map</a>
+			</div>
+		</div>
+	</section>
+
+	<section data-role="page" id="main-map">
+		<header data-role="header">
+			Map Page
+		</header>
+		<div data-role="main">
+			<h2>This page is the second page</h2>
+			<div>
+				<a href="#" class="js-logout">Logout!</a>
+				<a href="#profile">Go to Profile</a>
+			</div>
+		</div>
+	</section>
+
+	<section data-role="page" id="profile">
+		<header data-role="header" class="flex-parent">
+			<div class="flex-none btn">Back</div>
+			<div class="flex-child title">Title of Page</div>
+			<div class="flex-none btn">&plus;</div>
+		</header>
+		<div data-role="main">
+			<h2>This page is the second page</h2>
+			<div>
+				<a href="#" class="js-logout">Logout!</a>
+				<a href="#login">Go to Login</a>
+			</div>
+		</div>
+	</section>
+	
+	
+
+
+
+
+
+
+	
+</body>
+</html>

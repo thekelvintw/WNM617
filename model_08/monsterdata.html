@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>monsterdata</title>
+	<script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+	<script src="lib/js/lodash.min.js"></script>
+	<script>
+		// Intainitiate variable
+		var db=[];
+
+		// Make function
+		_.templateSettings.interpolate = /{{([\s\S]+?)}}/g;
+		function showData(){
+			var result="";
+			var templ=_.template($("#user-item-template").html());
+			for (var i in db){
+				// result +=db[i].name.first+"<br>";
+				result +=templ(db[i]);
+			}
+			$(".data-list").html(result);
+		}
+
+		// Run code
+		// Document Ready
+		$(function(){
+			$.ajax({
+				url:'monsterdata_feed.json',
+				dataType:'json'
+			})
+			.done(function(data){
+				console.log(data);
+				db=data;
+				showData();
+			})
+		})
+
+	</script>
+
+
+</head>
+<body>
+	<div class="data-list"></div>
+</body>
+<script type="text/template" id="user-item-template">
+	<div class="user-item data-id="{{id}}">
+	{{name.first}}
+	{{email}}
+	{{gender}}
+	{{animal.next()}}
+	
+
+		
+	</div>
+	
+	
+</script>
+</html>

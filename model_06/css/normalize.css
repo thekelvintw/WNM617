@@ -1,0 +1,325 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+
+strong {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+}
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px;
+}
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+h1 {
+  font-size: 38px;
+  line-height: 44px;
+  margin-top: 20px;
+}
+h2 {
+  font-size: 32px;
+  line-height: 36px;
+  margin-top: 20px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 20px;
+}
+h4 {
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+h5 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+h6 {
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 10px;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+a:focus {
+  outline: 0;
+}
+blockquote {
+  margin: 0 0 10px 0;
+  padding: 10px 20px;
+  border-left: 5px solid #E2E2E2;
+  font-size: 18px;
+  line-height: 22px;
+}
+figure {
+  margin: 0;
+  margin-bottom: 10px;
+}
+figcaption {
+  margin-top: 5px;
+  text-align: center;
+}
+ul,
+ol {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-left: 40px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.k-container:before,
+.k-container:after {
+  content: " ";
+  display: table;
+}
+.k-container:after {
+  clear: both;
+}
+.k-container .k-row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.k-row:before,
+.k-row:after {
+  content: " ";
+  display: table;
+}
+.k-row:after {
+  clear: both;
+}
+.k-row .k-row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.k-col {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.k-col  {
+  padding-left: 0;
+  padding-right: 0;
+}
+.k-col-1 {
+  width: 8.33333333%;
+}
+.k-col-2 {
+  width: 16.66666667%;
+}
+.k-col-3 {
+  width: 25%;
+}
+.k-col-4 {
+  width: 33.33333333%;
+}
+.k-col-5 {
+  width: 41.66666667%;
+}
+.k-col-6 {
+  width: 50%;
+}
+.k-col-7 {
+  width: 58.33333333%;
+}
+.k-col-8 {
+  width: 66.66666667%;
+}
+.k-col-9 {
+  width: 75%;
+}
+.k-col-10 {
+  width: 83.33333333%;
+}
+.k-col-11 {
+  width: 91.66666667%;
+}
+.k-col-12 {
+  width: 100%;
+}
+.k-hidden-main {
+  display: none !important;
+}
+
+
+@media screen and (max-width: 479px) {
+  .k-container {
+    max-width: none;
+  }
+  .k-hidden-main {
+    display: inherit !important;
+  }
+  .k-hidden-medium {
+    display: inherit !important;
+  }
+  .k-hidden-small {
+    display: inherit !important;
+  }
+  .k-hidden-tiny {
+    display: none !important;
+  }
+  .k-col {
+    width: 100%;
+  }
+  .k-col-tiny-1 {
+    width: 8.33333333%;
+  }
+  .k-col-tiny-2 {
+    width: 16.66666667%;
+  }
+  .k-col-tiny-3 {
+    width: 25%;
+  }
+  .k-col-tiny-4 {
+    width: 33.33333333%;
+  }
+  .k-col-tiny-5 {
+    width: 41.66666667%;
+  }
+  .k-col-tiny-6 {
+    width: 50%;
+  }
+  .k-col-tiny-7 {
+    width: 58.33333333%;
+  }
+  .k-col-tiny-8 {
+    width: 66.66666667%;
+  }
+  .k-col-tiny-9 {
+    width: 75%;
+  }
+  .k-col-tiny-10 {
+    width: 83.33333333%;
+  }
+  .k-col-tiny-11 {
+    width: 91.66666667%;
+  }
+  .k-col-tiny-12 {
+    width: 100%;
+  }
+}
+.k-widget {
+  position: relative;
+}
+
+
+
+

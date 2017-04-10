@@ -1,0 +1,31 @@
+[data-role=header] .btn {
+	height:40px;
+	line-height:40px;
+	padding:0 1em;
+}
+[data-role=header] .title {
+	height:40px;
+	line-height:40px;
+	padding:0 1em;
+	text-align:center;
+	font-weight:bold;
+}
+
+
+
+.flex-parent {
+	display:-webkit-flex;
+	display:flex;
+	-webkit-flex-direction:row;
+	flex-direction:row;
+	-webkit-flex-wrap:wrap;
+	flex-wrap:wrap;
+}
+.flex-child {
+	-webkit-flex:1;
+	flex:1;
+}
+.flex-none {
+	-webkit-flex:none;
+	flex:none;
+}

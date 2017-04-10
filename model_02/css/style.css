@@ -1,0 +1,181 @@
+.container{
+	max-width:800px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+header{
+	background-color:lightblue;
+	margin-top:0;
+
+}
+header h1,
+p{
+	margin:0;
+}
+
+
+
+.nav ul{
+	list-style-type:none;
+	margin-top:0;
+	margin-bottom:0;
+	padding-left:0;
+
+
+	display:-webkit-flex;
+	display:flex;
+}
+
+/*check flex box*/
+/*http://zh-tw.learnlayout.com/flexbox.html*/
+
+.nav li{
+	-webkit-flex:1;
+	flex:1;
+
+}
+
+.nav a{
+	display:block;
+	text-align:center;
+	text-decoration: none;
+	color:red;
+}
+
+
+.nav a:hover{
+	text-decoration:underline;
+}
+
+
+.flex-parent {
+	display:-webkit-flex;
+	display:flex;
+	-webkit-flex-direction:row;
+	flex-direction:row;
+	-webkit-flex-wrap:wrap;
+	flex-wrap:wrap;
+}
+.flex-child {
+	-webkit-flex:1 0 33.33333%;
+	flex:1 0 33.33333%;
+}
+.flex-none {
+	-webkit-flex:none;
+	flex:none;
+}
+
+/*flex box usually in use of header, list, button*/
+
+
+
+/*A lot of change accorfing to RWD, but in the fact few change gradually step to step*/
+/*What can I get a way with but still amazing*/
+
+/*Not doing copy and pasting but overwriting*/
+
+/*max-width for goes down*/
+/*design goesup with min*/
+@media (max-width:800px){
+	.container{
+		padding-left:10px;
+		padding-right:10px;
+
+	}
+
+	/* % is based on parents size */
+	/* em is based on text, ex box margin*/
+	/*vmax, vmin, vh, vw, relative based on screen size */
+
+
+	header h1{
+		color:white;
+		font-size:9vw;
+		text-align:center;
+	}
+
+	header p{
+		color:white;
+		text-align:center;	
+	}
+
+
+
+	.nav ul{
+		display:block;		
+	}
+	.nav li{
+		flex:none;
+	}
+	.nav a{
+		text-align:left;
+
+	}
+
+
+}
+
+
+@media (max-width:600px){
+	main{
+		height:calc(100vh - 9vw - 8.6em );
+		/*not design web but application*/
+		/*design sth fix there that can always fix*/
+		overflow:auto;
+	}
+
+}
+
+
+
+body {
+	-webkit-display:flex;
+	display:flex;
+	-webkit-flex-wrap:wrap;
+	flex-wrap:wrap;
+}
+header {
+	flex:1 1 100%;
+	order:1;
+	/*change 順序*/
+}
+nav {
+	flex:1 1 200px;
+	order:3;
+}
+main {
+	flex:1 1 auto;
+	order:2;
+}
+
+
+
+/*
+hw 2/21
+1)thinkuing midterm
+Build an app- animatal tracking
+
+required
+*clickable function, no function but page show up or popup page
+.name and map of application
+.add the location
+.my profile page
+.eddit my page
+
+research/sitemape/drawing
+but keep it simple not social function
+
+
+
+2)
+Take somebody's css libary and change it as possible as you can
+only can change CSS but not html
+CSS zen garden
+(You can put img on background img)
+http://www.initializr.com/
+
+How to beat others code ex wordress
+
+
+*/

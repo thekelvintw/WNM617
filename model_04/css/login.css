@@ -1,0 +1,66 @@
+/*design form once in main guide and never toch it again*/
+* {
+	box-sizing:border-box;
+}
+
+.form-control {
+	display:-webkit-flex;
+	display:flex;
+	align-items:center;
+}
+.form-label {
+	flex:none;
+	width:8em;
+	text-align:right;
+	padding-right:1em;
+	outline:0;
+}
+.form-input,
+.form-button {
+	flex:1 1 auto;
+	font-size:inherit;
+	font-family:inherit;
+	padding:0.2em 0.5em;
+	line-height:1em;
+	margin:1px;
+}
+.form-input {
+	border:1px solid gray;
+}
+.form-button {
+	border-width:0;
+	background-color:gray;
+	color:white;
+	cursor:pointer;
+}
+
+
+/*.isloggedin #loggedout,
+#loggedin {
+	display:none;
+}
+.isloggedin #loggedin,
+#loggedout {
+	display:block;
+}*/
+
+body {
+	overflow:hidden;
+}
+#loggedin,
+#loggedout {
+	position:relative;
+	transition:all 0.3s;
+}
+#loggedin {
+	transform:translateX(-100%);
+}
+.isloggedin #loggedin {
+	transform:translateX(0);
+}
+#loggedout {
+	transform:translateX(0);
+}
+.isloggedin #loggedout {
+	transform:translateX(100%);
+}

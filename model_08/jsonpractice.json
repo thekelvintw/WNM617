@@ -1,0 +1,35 @@
+{
+	
+	"notes":[
+		"Json files must start with an object or array",
+		"Json files cannot have any comment",
+		"Json strings can only be made from double quotes",
+		"All object property  names must be quoted",
+		"Commas go between items in arrays in arrays and objects,not just at the end of a line",
+		"Use JsonLint to check cuz it's no clue but you have to remember above 5 rules",
+		"Jsongenerator.com generate fake data"
+	],
+
+	"users":[
+		{
+			"name":"Kelvin",
+			"type":"student",
+			"3dprinters":[]
+		},
+
+		{
+			"name":"Hamiton",
+			"type":"teacher",
+			"3dprinters":[
+			"anet a8",
+			"mark 2",
+			"triple 3"
+
+			]
+		}
+
+	]
+
+}
+
+

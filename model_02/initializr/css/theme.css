@@ -1,0 +1,84 @@
+.header-container{
+	/*background-color:black;*/
+	border-bottom: 5px solid blue;
+	/*.. for go back the prevous layer*/
+	background-image:url("../img/sea2.png");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-color:#93d1ef;
+	color:white;
+	height:85vh;
+
+	
+}
+
+
+h1.title{
+	font-family:impact;
+	font-size:10rem;
+}
+@media (max-width: 600px) {
+	h1.title {
+		font-size: 6rem;
+	}
+}
+
+.footer-container, .main aside{
+	background-color:#131624;
+	border-top: 5px solid blue; 
+}
+
+
+
+
+img{
+	width:1080px;
+	height:960px;
+}
+
+
+nav a{
+	background-color:#9fb9d0;
+	color:black;
+	font-size:1.2em;
+}
+
+/*Not working*/
+@media (max-width: 600px) {
+nav li a {
+    font-size: 1.5em;
+
+	}
+}
+
+
+
+    .main article {
+        float: right;
+        
+    }
+
+    .main aside {
+        float: left; 
+        
+    }
+
+
+.footer-container, .main aside{
+    background: #93D1EF !important;
+}
+
+main aside {
+	border-top:20px solid #131624;
+}
+
+
+
+
+/* #131624 black blue */
+/* #93D1EF light blue*/
+/*3 weeks until midtern*/
+
+
+
+

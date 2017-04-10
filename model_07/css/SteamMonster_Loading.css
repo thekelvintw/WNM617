@@ -1,0 +1,51 @@
+h1{
+	flex:1 1 100%;
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:10px;
+	color:gray;
+}
+
+/*body {*/
+/*	-webkit-display:flex;
+	display:flex;*/
+	/*-webkit-flex-wrap:wrap;*/
+	/*flex-wrap:wrap;*/
+/*}*/
+
+/*.loading-image: {*/
+	/*flex:1 1 100%;*/
+	/*order:1;*/
+	/*change 順序
+}*/
+
+.ui-input-text input{
+	color:white;
+}
+
+.loading-img{
+	width:80%;
+}
+
+#login{
+	margin-top:4vh;
+	margin-left:20vw;
+	font-size:3em;
+}
+
+@media screen and (min-width: 480px){
+
+.button-login,.loading-img{
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.loading-img{
+	margin-top:8vh;
+	width:80%;
+	height:60%;
+}
+
+}

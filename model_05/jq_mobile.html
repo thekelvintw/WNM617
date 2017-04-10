@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Mobile</title>
+	
+	<link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css">
+	<!-- only use structure cuz theme is too poor and hard to overwrite it -->
+	<link rel="stylesheet" href="css/jq_mobile.css">
+
+	<script src="lib/js/jquery-2.2.4.min.js"></script>
+	<script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- want's everything in one document -->
+
+	<script src="js/jq_mobile.js"></script>
+
+</head>
+
+<body>
+
+	<section data-role="page" id="page1">
+		<header data-role="header">
+			Top Bar Page1
+		</header>
+
+		<div data-role="main">
+			<h2>This page is the first page</h2>
+	<div>
+		<a href="#page2">Page2</a>
+	</div>
+
+		</div>
+
+	</section>
+
+
+
+	<section data-role="page" id="page2">
+		<header data-role="header">
+			Top Bar Page2
+		</header>
+
+		<div data-role="main">
+		
+				<h2>This page is the second page</h2>
+	<div>
+		<a href="#page1">Page1</a>
+	</div>
+
+			
+		</div>
+
+	</section>
+
+
+
+
+
+
+	
+</body>
+</html>
+
+
+<!-- http://todomvc.com/ -->
